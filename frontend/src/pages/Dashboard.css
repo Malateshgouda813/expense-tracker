@@ -1,0 +1,94 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* LEFT PANEL */
+.left-panel {
+  flex: 1;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.expense-form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.expense-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.expense-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* SMALL DELETE BUTTON */
+.delete-btn {
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* BOTTOM BUTTONS */
+.bottom-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* SMALL ICON BUTTONS */
+.download-btn,
+.logout-btn {
+  width: px;
+  height: 35px;
+  cursor: pointer;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* SMALL FILTER BUTTONS */
+.filter-buttons {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  width: 80px;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+}

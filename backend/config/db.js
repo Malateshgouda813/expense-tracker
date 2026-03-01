@@ -1,0 +1,15 @@
+import pkg from "pg";
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const { Pool } = pkg;
+
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URI,
+  ssl: {
+    require: true,
+    rejectUnauthorized: false,
+  },
+});
+export default pool;

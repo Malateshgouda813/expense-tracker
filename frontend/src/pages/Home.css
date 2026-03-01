@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.features{
+  text-align: center;
+  text-decoration: none;
+  color: #7a7af5;
+}
+
+.home-wrapper {
+  height: 100vh;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-card {
+  width: 95%;
+  max-width: 1100px;
+  height: 600px;
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #f4e7d4;
+}
+
+/* LEFT SIDE */
+.left-section {
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #6b6b6b;
+  margin-bottom: 40px;
+}
+
+.left-section h2 {
+  margin-bottom: 25px;
+  color: #6a6adf;
+}
+
+.left-section input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #d9c9b0;
+  border-radius: 10px;
+  outline: none;
+  background: transparent;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.terms input {
+  margin-right: 10px;
+}
+
+.signup-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #7a7af5;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* RIGHT SIDE */
+.right-section {
+  width: 50%;
+  background: linear-gradient(135deg, #5f5fff, #6a6adf);
+  border-top-left-radius: 300px;
+  border-bottom-left-radius: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.right-content h1 {
+  color: orange;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.date-time {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 2px solid orange;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .home-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .right-section {
+    border-radius: 0;
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-card {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .right-section {
+    border-radius: 0;
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-section {
+    padding: 30px 20px;
+  }
+
+  .right-content h1 {
+    font-size: 28px;
+  }
+
+  .signup-btn {
+    width: 100%;
+  }
+}
